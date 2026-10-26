@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>The Hobbi</title>
+    <link rel="stylesheet" href="hobbi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&family=Koulen&family=Kantumruy+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="desk">
+      <svg class="lamp" viewBox="0 0 230 170" aria-hidden="true">
+        <defs>
+          <radialGradient id="lg">
+            <stop offset="0" stop-color="#fff6d6" />
+            <stop offset="1" stop-color="#ffcf70" />
+          </radialGradient>
+        </defs>
+        <path
+          d="M0 20 L60 4 Q130 -4 175 36 L195 100 Q110 120 40 96 Z"
+          fill="#141414"
+        />
+        <ellipse
+          cx="150"
+          cy="100"
+          rx="62"
+          ry="20"
+          fill="url(#lg)"
+          transform="rotate(8 150 100)"
+        />
+      </svg>
+      <div class="cup" aria-hidden="true"></div>
+      <svg class="pen" viewBox="0 0 220 24" aria-hidden="true">
+        <rect x="0" y="4" width="170" height="16" rx="8" fill="#3b2b1c" />
+        <rect x="120" y="4" width="14" height="16" fill="#d7b25a" />
+        <path d="M170 4 L214 12 L170 20Z" fill="#d7b25a" />
+        <rect
+          x="10"
+          y="7"
+          width="100"
+          height="3"
+          rx="1.5"
+          fill="rgba(255,255,255,.3)"
+        />
+      </svg>
+
+      <div class="board">
+        <div class="clip"></div>
+        <main class="paper">
+          <header>
+            <h1>
+              <span class="t1">DAILY QUEST</span
+              ><span class="t2">បេសកកម្មប្រចាំថ្ងៃ</span>
+            </h1>
+            <p class="sub">
+              <span id="greet">សួស្តី, Tha</span> · <span id="dateLine"></span>
+            </p>
+            <div class="hud">
+              <div class="lv" id="lv">LV 1</div>
+              <div class="xp">
+                <small>XP <span id="xpt">0/100</span></small>
+                <div class="bar"><i id="xpf"></i></div>
+              </div>
+              <div class="qc">
+                បេសកកម្ម <b id="doneCount">0</b>/<b id="totalCount">10</b>
+              </div>
+            </div>
+          </header>
+
+          <section class="sec" id="nutrition">
+            <h2><b>01</b>អាហារូបត្ថម្ភ និងការផឹកទឹក</h2>
+            <p class="sub">
+              ផឹកទឹក 2.2 លីត្រ ហើយញ៉ាំអាហារបីពេល។ ចុចប្លុកដើម្បីកំណត់បរិមាណទឹក។
+            </p>
+            <div class="seg" id="seg" aria-label="ទឹក"></div>
+            <div class="row">
+              <button class="btn" id="addWater">+ 250 មល</button
+              ><button class="btn" id="subWater">− 250 មល</button
+              ><span>ទឹក <b id="wv">0.00</b> / 2.2 លីត្រ</span>
+            </div>
+            <div class="chips" style="margin-top: 18px">
+              <label class="chip"
+                ><input type="checkbox" data-key="breakfast" /><span
+                  >អាហារពេលព្រឹក</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" data-key="lunch" /><span
+                  >អាហារពេលថ្ងៃត្រង់</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" data-key="dinner" /><span
+                  >អាហារពេលល្ងាច</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" data-key="nofast" /><span
+                  >មិនញ៉ាំ Fast food</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" data-key="nosugar" /><span
+                  >មិនផឹកភេសជ្ជៈផ្អែម</span
+                ></label
+              >
+            </div>
+            <div class="sticky wide">
+              <h3>កុំរំលងអាហារពេលល្ងាច</h3>
+              សក់ត្រូវការប្រូតេអ៊ីន ជាតិដែក និងស័ង្កសី។ អាហារស្រាលៗក៏បាន
+              ប៉ុន្តែកុំរំលងទាំងស្រុង។
+            </div>
+          </section>
+
+          <section class="sec" id="care">
+            <h2><b>02</b>ថែសក់ និងឥរិយាបថ</h2>
+            <div class="notes">
+              <div class="sticky">
+                <h3>ទម្លាប់ថែសក់</h3>
+                <ul>
+                  <li>
+                    កក់ថ្នមៗ ដោយទឹកក្តៅឧណ្ហៗ និងសាប៊ូស្រាល ប្រើចុងម្រាមដៃ។
+                  </li>
+                  <li>
+                    ជូតដោយក្រមាមីក្រូហ្វាយប័រ ដោយសង្កត់ស្រាលៗ កុំជូតខ្លាំង។
+                  </li>
+                  <li>កាត់បន្ថយកំដៅ និងការចងសក់តឹង។</li>
+                </ul>
+              </div>
+              <div class="sticky b">
+                <h3>ឥរិយាបថពេលសរសេរកូដ</h3>
+                <ul>
+                  <li>អេក្រង់នៅប្រវែងដៃ គែមលើស្មើកម្រិតភ្នែក។</li>
+                  <li>ជើងដាក់លើដី កែងដៃមុំ 90° ខ្នងផ្អែកកៅអី។</li>
+                  <li>រៀងរាល់ 30 នាទី ក្រោកឈរ បង្វិលស្មា ហើយធ្វើ Chin tuck។</li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot">
+              <button class="btn" id="postureBtn">
+                ចាប់ផ្តើមការរំលឹក 30 នាទី</button
+              ><span id="postureState">ការរំលឹកបិទ</span>
+            </div>
+          </section>
+
+          <section class="sec" id="plan">
+            <h2><b>03</b>កាលវិភាគហាត់ប្រាណ</h2>
+            <p class="sub">
+              រត់ព្រឹក 25 នាទី ហើយហាត់ដោយទម្ងន់ខ្លួនពេលល្ងាច។
+              ថ្ងៃនេះត្រូវបានបន្លិច។
+            </p>
+            <div class="tw">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ថ្ងៃ</th>
+                    <th>ពេលព្រឹក</th>
+                    <th>ពេលល្ងាច</th>
+                    <th>ការផ្តោត</th>
+                  </tr>
+                </thead>
+                <tbody id="planBody"></tbody>
+              </table>
+            </div>
+            <div class="sticky wide" style="background: #e3dcff">
+              <h3>ចំណាំ</h3>
+              Chin tucks និង Ceiling kiss ពង្រឹងសាច់ដុំក្រោមចង្កា
+              ប៉ុន្តែមិនអាចដុតខ្លាញ់ចេញពីកន្លែងតែមួយបានទេ។ ការរត់ ការញ៉ាំទៀងទាត់
+              និងការគេងជួយបានច្រើនជាង។
+            </div>
+          </section>
+
+          <section class="sec" id="check">
+            <h2><b>04</b>បញ្ជីបេសកកម្មប្រចាំថ្ងៃ</h2>
+            <p class="sub">
+              ធីកម្តងៗ ដើម្បីទទួលបាន XP។ រក្សាទុកក្នុងឧបករណ៍នេះ
+              ហើយកំណត់បេសកកម្មឡើងវិញរៀងរាល់ថ្ងៃ។
+            </p>
+            <ul class="todo" id="todo"></ul>
+            <div class="foot">
+              <span>ប្រអប់ទឹកធីកដោយស្វ័យប្រវត្តិ ពេលបាន 2.2 លីត្រ។</span
+              ><button class="btn" id="resetBtn">កំណត់ថ្ងៃនេះឡើងវិញ</button>
+            </div>
+          </section>
+          <div class="sig">TH · DAILY QUEST LOG</div>
+        </main>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+     <script src="hobbii.js"></script>
+  </body>
+</html>
